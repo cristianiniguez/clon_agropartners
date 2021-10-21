@@ -1,0 +1,14 @@
+@mixin body-norm {
+  margin: 0;
+}
+
+@mixin a-norm {
+  color: inherit;
+  text-decoration: none;
+}
+
+@mixin ul-norm {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

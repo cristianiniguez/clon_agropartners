@@ -1,15 +1,15 @@
-html,
+@import './globals';
+
 body {
-  padding: 0;
-  margin: 0;
+  @include body-norm;
   font-family: 'Roboto', sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  @include a-norm;
 }
 
-* {
-  box-sizing: border-box;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }

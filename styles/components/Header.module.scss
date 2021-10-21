@@ -1,0 +1,22 @@
+@import '../globals';
+
+.root {
+  background-color: rgba($black, 0.75);
+  color: $white;
+  height: 48px;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 100%;
+
+  img {
+    height: 100%;
+  }
+}

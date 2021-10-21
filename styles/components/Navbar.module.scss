@@ -1,0 +1,30 @@
+@import '../globals';
+
+.root {
+  ul {
+    @include ul-norm;
+    display: flex;
+
+    li {
+      margin: 0 0.25rem;
+
+      a {
+        $size: 32px;
+
+        height: $size;
+        border-radius: $size / 2;
+        padding: 0 1rem;
+
+        transition: all 0.25s ease-in-out;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          background-color: $primary;
+        }
+      }
+    }
+  }
+}
