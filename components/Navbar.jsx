@@ -1,3 +1,7 @@
+import { useState } from 'react';
+import { FaBars } from 'react-icons/fa';
+import classNames from 'classnames';
+
 import styles from '../styles/components/Navbar.module.scss';
 
 const links = [
@@ -10,15 +14,20 @@ const links = [
 ];
 
 const Navbar = () => {
+  const [shown, setShown] = useState(false);
+
   return (
     <nav className={styles.root}>
-      <ul>
+      <ul className={classNames(styles.menu, { [styles['menu--shown']]: shown })}>
         {links.map(({ label, href }, i) => (
-          <li key={`link-${i}`}>
+          <li key={`link-${i}`} onClick={() => setShown(false)}>
             <a href={href}>{label}</a>
           </li>
         ))}
       </ul>
+      <button className={styles.button} onClick={() => setShown(!shown)}>
+        <FaBars />
+      </button>
     </nav>
   );
 };
