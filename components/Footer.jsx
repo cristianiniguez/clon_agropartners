@@ -5,7 +5,7 @@ import styles from '../styles/components/Footer.module.scss';
 const Footer = () => {
   return (
     <footer className={styles.root}>
-      <img src='/images/logo-normal.png' alt='Logo de Agropartners' />
+      <img className={styles.image} src='/images/logo-normal.png' alt='Logo de Agropartners' />
       <div className={styles.links}>
         <a
           href='https://www.facebook.com/AgroPartners-736514103046562/'
