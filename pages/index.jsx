@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Layout from '../components/Layout';
+import { Hero } from '../sections';
 
 export default function Home() {
   return (
@@ -10,7 +11,9 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <Layout>Hola</Layout>
+      <Layout>
+        <Hero />
+      </Layout>
     </>
   );
 }
