@@ -1,0 +1,11 @@
+@import '../globals';
+
+.root {
+  font-family: Georgia, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: $gray90;
+  padding: 3rem;
+  text-align: center;
+}
