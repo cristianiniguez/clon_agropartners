@@ -1,0 +1,23 @@
+@import '../globals';
+
+.root {
+  background-color: $gray90;
+}
+
+.shape {
+  display: block;
+  fill: $primary;
+  width: 100%;
+  height: 32px;
+}
+
+.image {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 64px;
+  }
+}

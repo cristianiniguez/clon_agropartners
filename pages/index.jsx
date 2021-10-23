@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Layout from '../components/Layout';
-import { Hero } from '../sections';
+import { Hero, Logo } from '../sections';
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
 
       <Layout>
         <Hero />
+        <Logo />
       </Layout>
     </>
   );
