@@ -1,0 +1,32 @@
+@import '../globals';
+
+.root {
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
+.grid {
+  $gap: 2vw;
+  display: grid;
+  grid-template-columns: repeat(4, (100vw - $gap) / 2);
+  gap: $gap;
+  overflow: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.pillar {
+  figure {
+    @include figure-norm;
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
