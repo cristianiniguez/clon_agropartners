@@ -1,0 +1,22 @@
+@import '../globals';
+
+.root {
+  background-color: $gray90;
+  margin-bottom: var(--margin-bottom);
+  padding: 2rem;
+  padding-bottom: 5rem;
+  clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 3.5rem), 30% 100%, 0% calc(100% - 3.5rem));
+
+  p,
+  li {
+    line-height: 1.5;
+  }
+
+  ul {
+    padding-inline-start: 1rem;
+  }
+
+  img {
+    width: 100%;
+  }
+}
